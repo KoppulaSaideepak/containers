@@ -6,23 +6,25 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: relative;
-    overflow: hidden;
+    
+
+    
 
 }
 .text{
-    position: absolute;
     color: rgb(98, 145, 162);
-    top: 0px;
-    left: 0px;
     font-size: 1.8rem;
     margin: 0px;
     height: 100px;
-    transform: translateX(100%);
+    backdrop-filter: blur(5px) brightness(50%);
+    opacity: 0;
     transition: all 1s linear 0s;
+    
 }
 
 .container:hover>.text{
-    transform: translateX(0px);
+    opacity: 1;
+    
+    
     
 }
